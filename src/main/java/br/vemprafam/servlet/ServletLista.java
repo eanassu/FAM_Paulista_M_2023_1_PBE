@@ -66,7 +66,10 @@ public class ServletLista extends HttpServlet {
 			            +"</td>");
 			out.println("</tr>");
 		}
+		
 		out.println("</table>");
+		out.println("<br/>\r\n"
+				+ "<a href=\"/Projeto\">voltar</a>");
 		out.println("</body>");
 		out.println("</html>");
 	}
