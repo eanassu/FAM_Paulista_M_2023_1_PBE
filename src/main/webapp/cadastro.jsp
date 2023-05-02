@@ -12,12 +12,13 @@
 <title>Cadastro</title>
 </head>
 <body>
-<form action="cadastrar">
+<form action="Controller">
 código:<input type="text" name="codigo"/><br/>
 descrição:<input type="text" name="descricao"/><br/>
 quantidade:<input type="text" name="quantidade"/><br/>
 preço:<input type="text" name="preco"/><br/>
 data da compra:<fam:campoData id="dataCompra"/>
+<input type="hidden" name="op" value="Cadastro"/>
 <input type="submit" value="enviar"/>
 <br/>
 <a href="/Projeto">voltar</a>

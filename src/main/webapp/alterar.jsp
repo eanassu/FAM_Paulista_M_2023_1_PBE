@@ -21,13 +21,14 @@ DaoProduto dao = new DaoProduto();
 Produto p = dao.buscarPeloCodigo(codigo);
 SimpleDateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
 %>
-<form action="alterar">
+<form action="Controller">
 código:<input type="text" name="codigo" value="<%=p.getCodigo()%>"/><br/>
 descrição:<input type="text" name="descricao" value="<%=p.getDescricao()%>"/><br/>
 quantidade:<input type="text" name="quantidade" value="<%=p.getQuantidade()%>"/><br/>
 preço:<input type="text" name="preco" value="<%=p.getPreco()%>"/><br/>
 data da compra:<fam:campoData id="dataCompra" 
   value="<%=dateFormat.format(p.getDataCompra())%>"/><br/>
+<input type="hidden" name="op" value="Alteracao"/>
 <input type="submit" value="enviar"/>
 <br/>
 </form>
